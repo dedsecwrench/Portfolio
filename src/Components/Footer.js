@@ -46,11 +46,19 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <label className='l1'>Instagram</label>
-                <label className='l2'>Gmail</label>
+              <a href="https://www.instagram.com/dedsecwrench/" target="_blank" style={{ textDecoration: "none", color: "#E1306C" }}>
+                <label className='l1'>Instagram</label></a>
+
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=dedsec9902@gmail.com" target="_blank" style={{ textDecoration: "none", color: "rgb(255, 65, 65)" }}>
+                <label className='l2'>Gmail</label></a>
+
                 <label className='l3'>Facebook</label>
-                <label className='l4'>LinkedIn</label>
-                <label className='l5'>Twitter</label>
+
+                <a href="https://www.linkedin.com/in/nameera-pathan-ba17811b1/" target="_blank" style={{ textDecoration: "none", color: "#0072b1" }}>
+                <label className='l4'>LinkedIn</label></a>
+
+                <a href="https://twitter.com/__ded_sec_" target="_blank" style={{ textDecoration: "none", color: "#00acee" }}>
+                <label className='l5'>Twitter</label></a>
 
             </div>
 
