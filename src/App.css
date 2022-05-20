@@ -1,0 +1,384 @@
+/* 
+#root{
+  background-color: #000000;
+} */
+.button{
+  position: relative;
+  left: 550px;
+}
+.head{
+  background-color: transparent;
+}
+.ex{
+  margin-bottom: 50rem;
+}
+
+.home-img{
+  height: 50rem;
+  width: 100%;
+  opacity: 0.5;
+  /* margin-bottom: 50rem; */
+}
+
+.head-text{
+  color: white;
+  position: absolute;
+  bottom: 19.7rem;
+  left: 37rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.hey{
+  font-size: 30px;
+}
+.name{
+  font-size: 50px;
+}
+/* .stp{
+  height: 160px;
+  width: 90px;
+  border-radius: 10px;
+} */
+.center-text1{
+  color: white;
+  position: absolute;
+  bottom: 7rem;
+  left: 38rem;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.center-text2{
+  color: white;
+  position: absolute;
+  bottom: 4.8rem;
+  left: 39.8rem;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+.center-text3{
+  color: white;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 37.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+
+/* --------------------------------------------- */
+.mid{
+  margin-left: 27rem;
+}
+.nav-item{
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin-right: 1rem;
+  font-size: 20px;
+  width: 100px;
+}
+
+.navbar {
+  transition: all 0.4s;
+  background-color: #000000;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+      background: #fff;
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+      color: #555;
+  }
+}
+
+
+
+.text-small {
+  font-size: 0.9rem !important;
+}
+
+
+body {
+  min-height: 110vh;
+  background-color: #000000;
+
+  --def: #000000; 	
+	--inv: #fff;
+  background-image: linear-gradient(135deg, #000000 0%, #000000 100%);
+}
+
+/* ----------------------------------------------------------- */
+
+
+.btn {		
+	position: relative;	
+	/* padding: 1.4rem 4.2rem; */
+	/* padding-right: 3.1rem; */
+	font-size: 20px;
+	color: var(--inv);
+	/* letter-spacing: 1.1rem; */
+	/* text-transform: uppercase; */
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: var(--def);
+	transition-delay: .5s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background: var(--inv);
+	transition-delay: .35s;
+}
+
+/* From center */
+
+.from-center:before {
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;
+}
+
+.from-center:after {
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	background: var(--inv);
+}
+
+.from-center:hover:before {
+	left: 0;
+	width: 100%;
+}
+
+.from-center:hover:after {
+	top: 0;
+	height: 100%;
+}
+
+/* btn outline + focus */
+.btn:focus,
+.btn:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
+
+
+/* ------------------------ About Me --------------------------------- */
+.About{
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.aboutme{
+  position: relative;
+  left: 7px;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  width: 50%;
+  font-weight:bold ;
+  margin-top: 3rem;
+}
+.skilltext{
+  position: relative;
+  top: 10px;
+  left: 7px;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+  /* border: 1px solid red; */
+}
+.line{
+  border-bottom: 2px solid rgb(255, 65, 65);
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  left: 80px;
+}
+.line1{
+  border-bottom: 2px solid rgb(255, 65, 65);
+  width: 55px;
+  margin-top: 20px;
+  position: relative;
+  top: 5px;
+  left: 80px;
+  bottom: 1rem;
+}
+
+.aboutpara{
+  border: none;
+  /* background-color: #001419; */
+  color: #555;
+  height: 160px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-left: 7px;
+  font-size: 1.3rem;
+  padding: 10px;
+  text-justify: inter-word;
+}
+.skills{
+  height: 190px;
+  /* border: 1px solid rgb(0, 255, 42); */
+}
+
+/* --------------------------------- Projects ----------------------------------- */
+
+.portfolio{
+  position: relative;
+  left: 7px;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  width: 50%;
+  font-weight:bold ;
+  margin-top: 2rem;
+}
+.line3{
+  border-bottom: 2px solid rgb(255, 65, 65);
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  left: 80px;
+}
+.projectContainer{
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+}
+
+/* --------------------------------- Footer ----------------------------------- */
+
+.firstBlock{
+  height: 16rem;
+  /* border: 1px solid red; */
+  padding-left: 2rem;
+  color: #fff;
+  margin-top: 3rem;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.lastBlock{
+  background-color: rgb(40, 40, 40);
+  height: 10rem;
+  /* border: 1px solid red; */
+  padding-left: 2rem;
+  color: rgb(155, 155, 155);
+  margin-top: 3rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding-top: 4.5rem;
+}
+
+.socialBox{
+  /* border: 1px solid red; */
+  height: fit-content;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  left: 21rem;
+  padding-top: 5rem;
+}
+
+.socialButton{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* border: 1px solid white; */
+  padding-top: 10px ;
+  cursor: pointer;
+  /* opacity: 0.5; */
+}
+
+.mail:hover{
+  opacity: 0.7;
+  background-color: rgb(64, 45, 45);
+}
+.ig:hover{
+  opacity: 0.7;
+  background-color: rgb(64, 45, 61);
+}
+.fb:hover{
+  opacity: 0.7;
+  background-color: rgb(45, 51, 64);
+}
+.li:hover{
+  opacity: 0.7;
+  background-color: rgb(45, 56, 64);
+}
+.twt:hover{
+  opacity: 0.7;
+  background-color: rgb(42, 62, 62);
+}
+
+.l1{
+  position: relative;
+  top: 5px;
+  right: 107px;
+  color: #E1306C;
+  cursor: pointer;
+}
+.l2{
+  position: relative;
+  top: 5px;
+  right: 58px;
+  color: rgb(255, 65, 65);
+  cursor: pointer;
+}
+.l3{
+  position: relative;
+  top: 5px;
+  right: 5px;
+  color: #445ef2;
+  cursor: pointer;
+}
+.l4{
+  position: relative;
+  top: 5px;
+  left: 40px;
+  color: #0072b1;
+  cursor: pointer;
+}
+.l5{
+  position: relative;
+  top: 5px;
+  left: 90px;
+  color: #00acee;
+  cursor: pointer;
+}
