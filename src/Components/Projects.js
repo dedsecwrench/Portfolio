@@ -15,7 +15,7 @@ const skillBox = {
   "color" : "white",
   "padding":"10px",
   "borderRadius":"10px",
-  "box-shadow": "0 0 15px #ccc"
+  "boxShadow": "0 0 15px #ccc"
 }
 
 const skillTextBox = {
