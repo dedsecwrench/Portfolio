@@ -1,384 +1,1078 @@
-/* 
-#root{
-  background-color: #000000;
-} */
+.line-l{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.bord{
+  border: 1px solid #00acee;
+  height: 42.5rem;
+}
+.bord1{
+  /* border: 1px solid #00acee; */
+}
+
 .button{
-  position: relative;
-  left: 550px;
-}
-.head{
-  background-color: transparent;
-}
-.ex{
-  margin-bottom: 50rem;
-}
-
-.home-img{
-  height: 50rem;
-  width: 100%;
-  opacity: 0.5;
-  /* margin-bottom: 50rem; */
-}
-
-.head-text{
-  color: white;
-  position: absolute;
-  bottom: 19.7rem;
-  left: 37rem;
-  text-align: center;
-  letter-spacing: 1px;
-}
-.hey{
-  font-size: 30px;
-}
-.name{
-  font-size: 50px;
-}
-/* .stp{
-  height: 160px;
-  width: 90px;
-  border-radius: 10px;
-} */
-.center-text1{
-  color: white;
-  position: absolute;
-  bottom: 7rem;
-  left: 38rem;
-  font-size: 2rem;
-  text-align: center;
-  letter-spacing: 1px;
-}
-.center-text2{
-  color: white;
-  position: absolute;
-  bottom: 4.8rem;
-  left: 39.8rem;
-  font-size: 23px;
-  letter-spacing: 1px;
-}
-.center-text3{
-  color: white;
-  position: absolute;
-  bottom: 2.5rem;
-  left: 37.5rem;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-}
-
-
-/* --------------------------------------------- */
-.mid{
-  margin-left: 27rem;
-}
-.nav-item{
-  border: none;
-  background-color: transparent;
-  color: white;
-  margin-right: 1rem;
-  font-size: 20px;
-  width: 100px;
-}
-
-.navbar {
-  transition: all 0.4s;
-  background-color: #000000;
-}
-
-/* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
+    position: relative;
+    left: 550px;
+  }
+  .head{
+    background-color: transparent;
+  }
+  .ex{
+    margin-bottom: 50rem;
+  }
+  
+  .home-img{
+    height: 50rem;
+    width: 100%;
+    opacity: 0.5;
+    /* margin-bottom: 50rem; */
+  }
+  
+  .head-text{
+    color: white;
+    position: absolute;
+    bottom: 19.7rem;
+    left: 37rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .hey{
+    font-size: 30px;
+  }
+  .name{
+    /* top:1px */
+  }
+  /* .stp{
+    height: 160px;
+    width: 90px;
+    border-radius: 10px;
+  } */
+  .center-text1{
+    color: white;
+    position: absolute;
+    bottom: 7rem;
+    left: 38rem;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .center-text2{
+    color: white;
+    position: absolute;
+    bottom: 4.8rem;
+    left: 39.8rem;
+    font-size: 23px;
+    letter-spacing: 1px;
+  }
+  .center-text3{
+    color: white;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 37.5rem;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  
+  
+  /* --------------------------------------------- */
+  .mid{
+    margin-left: 27rem;
+  }
+  .nav-item{
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin-right: 1rem;
+    font-size: 20px;
+    width: 100px;
+  }
+  
   .navbar {
-      background: #fff;
+    transition: all 0.4s;
+    background-color: #000000;
+  }
+  
+  /* Change navbar styling on small viewports */
+  @media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+  
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+  }
+  
+  .text-small {
+    font-size: 0.9rem !important;
+  }
+  
+  
+  body {
+    min-height: 110vh;
+    background-color: #000000;
+  
+    --def: #000000; 	
+      --inv: #fff;
+    background-image: linear-gradient(135deg, #000000 0%, #000000 100%);
+  }
+  
+  /* ----------------------------------------------------------- */
+  
+  
+  .btn {		
+      position: relative;	
+      /* padding: 1.4rem 4.2rem; */
+      /* padding-right: 3.1rem; */
+      font-size: 20px;
+      color: var(--inv);
+      /* letter-spacing: 1.1rem; */
+      /* text-transform: uppercase; */
+      transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+      cursor: pointer;
+      user-select: none;
+  }
+  
+  .btn:before, .btn:after {
+      content: '';
+      position: absolute;	
+      transition: inherit;
+      z-index: -1;
+  }
+  
+  .btn:hover {
+      color: var(--def);
+      transition-delay: .5s;
+  }
+  
+  .btn:hover:before {
+      transition-delay: 0s;
+  }
+  
+  .btn:hover:after {
+      background: var(--inv);
+      transition-delay: .35s;
+  }
+  
+  /* From center */
+  
+  .from-center:before {
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 0;
+      border: 1px solid var(--inv);
+      border-left: 0;
+      border-right: 0;
+  }
+  
+  .from-center:after {
+      bottom: 0;
+      left: 0;
+      height: 0;
+      width: 100%;
+      background: var(--inv);
+  }
+  
+  .from-center:hover:before {
+      left: 0;
+      width: 100%;
+  }
+  
+  .from-center:hover:after {
+      top: 0;
+      height: 100%;
+  }
+  
+  /* btn outline + focus */
+  .btn:focus,
+  .btn:active{
+      box-shadow:none !important;
+      outline:0px !important;
+  }
+  
+  
+  /* ------------------------ About Me --------------------------------- */
+  .About{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* margin-top: 5rem; */
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .aboutme{
+    position: relative;
+    left: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    width: 50%;
+    font-weight:bold ;
+    margin-top: 3rem;
+  }
+  .skilltext{
+    position: relative;
+    top: 10px;
+    left: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    /* width: 100%; */
+    margin-top: 10px;
+    font-weight: bold;
+    /* border: 1px solid red; */
+  }
+  .line{
+    border-bottom: 2px solid rgb(255, 65, 65);
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 65px;
+  }
+  .line1{
+    border-bottom: 2px solid rgb(255, 65, 65);
+    width: 55px;
+    margin-top: 15px;
+    position: relative;
+    top: 5px;
+    left: 65px;
+    /* bottom: 1rem; */
+  }
+  
+  .aboutpara{
+    border: none;
+    /* background-color: #001419; */
+    color: rgb(209, 209, 209);
+    height: 160px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-left: 7px;
+    font-size: 1.3rem;
+    padding: 10px;
+    text-justify: inter-word;
+  }
+  .skills{
+    /* height: 130px; */
+    /* border: 1px solid rgb(0, 255, 42); */
+  }
+  
+  /* --------------------------------- Projects ----------------------------------- */
+  
+  .portfolio{
+    position: relative;
+    left: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    width: 50%;
+    font-weight:bold ;
+    margin-top: 2rem;
+  }
+  .line3{
+    border-bottom: 2px solid rgb(255, 65, 65);
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 65px;
+  }
+  .projectContainer{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    /* border: 1px solid gray; */
+  }
+  
+  /* --------------------------------- Footer ----------------------------------- */
+  
+  .contact{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* margin-top: 5rem; */
+    margin-bottom: 10px;
+    font-weight: bold;
   }
 
-  .navbar .navbar-brand, .navbar .nav-link {
-      color: #555;
+  .getin{
+    position: relative;
+    left: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    width: 50%;
+    font-weight:bold ;
+    margin-top: 2rem;
   }
-}
 
+  .con{
+    background-color: rgb(0, 0, 0);
+  }
 
+  .firstBlock{
+    height: 16rem;
+    /* border: 1px solid red; */
+    padding-left: 2rem;
+    color: #fff;
+    margin-top: 3rem;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .lastBlock{
+    background-color: rgb(40, 40, 40);
+    height: 10rem;
+    /* border: 1px solid red; */
+    padding-left: 1.5rem;
+    color: rgb(155, 155, 155);
+    margin-top: 3rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding-top: 4.5rem;
+  }
+  
+  .socialBox{
+    /* border: 1px solid red; */
+    height: fit-content;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    left: 20rem;
+    padding-top: 5rem;
+  }
+  
+  .socialButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    padding-top: 12px ;
+    cursor: pointer;
+    /* opacity: 0.5; */
+  }
+  
+  .mail:hover{
+    opacity: 0.7;
+    background-color: rgb(64, 45, 45);
+  }
+  .ig:hover{
+    opacity: 0.7;
+    background-color: rgb(64, 45, 61);
+  }
+  .fb:hover{
+    opacity: 0.7;
+    background-color: rgb(45, 51, 64);
+  }
+  .li:hover{
+    opacity: 0.7;
+    background-color: rgb(45, 56, 64);
+  }
+  .twt:hover{
+    opacity: 0.7;
+    background-color: rgb(42, 62, 62);
+  }
+  
+  .l1{
+    position: relative;
+    top: 5px;
+    right: 107px;
+    color: #E1306C;
+    cursor: pointer;
+  }
+  .l2{
+    position: relative;
+    top: 5px;
+    right: 58px;
+    color: rgb(255, 65, 65);
+    cursor: pointer;
+  }
+  .l3{
+    position: relative;
+    top: 5px;
+    right: 5px;
+    color: #445ef2;
+    cursor: pointer;
+  }
+  .l4{
+    position: relative;
+    top: 5px;
+    left: 40px;
+    color: #0072b1;
+    cursor: pointer;
+  }
+  .l5{
+    position: relative;
+    top: 5px;
+    left: 90px;
+    color: #00acee;
+    cursor: pointer;
+  }
 
-.text-small {
-  font-size: 0.9rem !important;
-}
+  /* -----------------------------------------BUBBLES ANIMATION-------------------------------------- */
 
-
-body {
-  min-height: 110vh;
-  background-color: #000000;
-
-  --def: #000000; 	
-	--inv: #fff;
-  background-image: linear-gradient(135deg, #000000 0%, #000000 100%);
-}
-
-/* ----------------------------------------------------------- */
-
-
-.btn {		
-	position: relative;	
-	/* padding: 1.4rem 4.2rem; */
-	/* padding-right: 3.1rem; */
-	font-size: 20px;
-	color: var(--inv);
-	/* letter-spacing: 1.1rem; */
-	/* text-transform: uppercase; */
-	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
-	cursor: pointer;
-	user-select: none;
-}
-
-.btn:before, .btn:after {
-	content: '';
-	position: absolute;	
-	transition: inherit;
-	z-index: -1;
-}
-
-.btn:hover {
-	color: var(--def);
-	transition-delay: .5s;
-}
-
-.btn:hover:before {
-	transition-delay: 0s;
-}
-
-.btn:hover:after {
-	background: var(--inv);
-	transition-delay: .35s;
-}
-
-/* From center */
-
-.from-center:before {
-	top: 0;
-	left: 50%;
-	height: 100%;
-	width: 0;
-	border: 1px solid var(--inv);
-	border-left: 0;
-	border-right: 0;
-}
-
-.from-center:after {
-	bottom: 0;
-	left: 0;
-	height: 0;
-	width: 100%;
-	background: var(--inv);
-}
-
-.from-center:hover:before {
-	left: 0;
-	width: 100%;
-}
-
-.from-center:hover:after {
-	top: 0;
-	height: 100%;
-}
-
-/* btn outline + focus */
-.btn:focus,
-.btn:active{
-    box-shadow:none !important;
-    outline:0px !important;
-}
-
-
-/* ------------------------ About Me --------------------------------- */
-.About{
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.aboutme{
+  
+.bubbles {
   position: relative;
-  left: 7px;
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
-  width: 50%;
-  font-weight:bold ;
-  margin-top: 3rem;
-}
-.skilltext{
-  position: relative;
-  top: 10px;
-  left: 7px;
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
   width: 100%;
-  margin-top: 10px;
-  font-weight: bold;
-  /* border: 1px solid red; */
-}
-.line{
-  border-bottom: 2px solid rgb(255, 65, 65);
-  width: 80px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  position: relative;
-  left: 80px;
-}
-.line1{
-  border-bottom: 2px solid rgb(255, 65, 65);
-  width: 55px;
-  margin-top: 20px;
-  position: relative;
-  top: 5px;
-  left: 80px;
-  bottom: 1rem;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.aboutpara{
-  border: none;
-  /* background-color: #001419; */
-  color: #555;
-  height: 160px;
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 1rem;
-  margin-left: 7px;
-  font-size: 1.3rem;
-  padding: 10px;
-  text-justify: inter-word;
-}
-.skills{
-  height: 190px;
-  /* border: 1px solid rgb(0, 255, 42); */
-}
-
-/* --------------------------------- Projects ----------------------------------- */
-
-.portfolio{
-  position: relative;
-  left: 7px;
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
-  width: 50%;
-  font-weight:bold ;
-  margin-top: 2rem;
-}
-.line3{
-  border-bottom: 2px solid rgb(255, 65, 65);
-  width: 80px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  position: relative;
-  left: 80px;
-}
-.projectContainer{
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  row-gap: 4rem;
-}
-
-/* --------------------------------- Footer ----------------------------------- */
-
-.firstBlock{
-  height: 16rem;
-  /* border: 1px solid red; */
-  padding-left: 2rem;
-  color: #fff;
-  margin-top: 3rem;
-  background-color: rgb(40, 40, 40);
-  border-radius: 10px;
-  text-align: center;
-}
-
-.lastBlock{
-  background-color: rgb(40, 40, 40);
-  height: 10rem;
-  /* border: 1px solid red; */
-  padding-left: 2rem;
-  color: rgb(155, 155, 155);
-  margin-top: 3rem;
-  text-align: center;
-  letter-spacing: 1.5px;
-  padding-top: 4.5rem;
-}
-
-.socialBox{
-  /* border: 1px solid red; */
-  height: fit-content;
-  width: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  position: relative;
-  left: 21rem;
-  padding-top: 5rem;
-}
-
-.socialButton{
-  height: 50px;
-  width: 50px;
+.bubble {
+  position: absolute;
+  left: var(--bubble-left-offset);
+  bottom: -75%;
+  display: block;
+  width: var(--bubble-radius);
+  height: var(--bubble-radius);
   border-radius: 50%;
-  /* border: 1px solid white; */
-  padding-top: 10px ;
-  cursor: pointer;
-  /* opacity: 0.5; */
+  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+}
+.bubble::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(155, 250, 255, 0.3);
+  border-radius: inherit;
+  animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+}
+.bubble:nth-child(0) {
+  --bubble-left-offset: 84vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(1) {
+  --bubble-left-offset: 74vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(2) {
+  --bubble-left-offset: 0vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(3) {
+  --bubble-left-offset: 35vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(4) {
+  --bubble-left-offset: 79vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(5) {
+  --bubble-left-offset: 54vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(6) {
+  --bubble-left-offset: 2vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(7) {
+  --bubble-left-offset: 60vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(8) {
+  --bubble-left-offset: 52vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(9) {
+  --bubble-left-offset: 75vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(10) {
+  --bubble-left-offset: 24vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(11) {
+  --bubble-left-offset: 20vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(12) {
+  --bubble-left-offset: 53vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(13) {
+  --bubble-left-offset: 34vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(14) {
+  --bubble-left-offset: 26vw;
+  --bubble-radius: 1vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(15) {
+  --bubble-left-offset: 54vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(16) {
+  --bubble-left-offset: 10vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(17) {
+  --bubble-left-offset: 59vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(18) {
+  --bubble-left-offset: 65vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(19) {
+  --bubble-left-offset: 53vw;
+  --bubble-radius: 1vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(20) {
+  --bubble-left-offset: 74vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(21) {
+  --bubble-left-offset: 78vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(22) {
+  --bubble-left-offset: 62vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(23) {
+  --bubble-left-offset: 56vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(24) {
+  --bubble-left-offset: 36vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(25) {
+  --bubble-left-offset: 80vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(26) {
+  --bubble-left-offset: 94vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(27) {
+  --bubble-left-offset: 42vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(28) {
+  --bubble-left-offset: 40vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(29) {
+  --bubble-left-offset: 87vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(30) {
+  --bubble-left-offset: 98vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(31) {
+  --bubble-left-offset: 97vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(32) {
+  --bubble-left-offset: 89vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(33) {
+  --bubble-left-offset: 62vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(34) {
+  --bubble-left-offset: 53vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(35) {
+  --bubble-left-offset: 15vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(36) {
+  --bubble-left-offset: 74vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(37) {
+  --bubble-left-offset: 22vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(38) {
+  --bubble-left-offset: 68vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(39) {
+  --bubble-left-offset: 45vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(40) {
+  --bubble-left-offset: 25vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(41) {
+  --bubble-left-offset: 18vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(42) {
+  --bubble-left-offset: 49vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(43) {
+  --bubble-left-offset: 87vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(44) {
+  --bubble-left-offset: 36vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(45) {
+  --bubble-left-offset: 4vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(46) {
+  --bubble-left-offset: 14vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(47) {
+  --bubble-left-offset: 26vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(48) {
+  --bubble-left-offset: 56vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(49) {
+  --bubble-left-offset: 27vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(50) {
+  --bubble-left-offset: 67vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
 }
 
-.mail:hover{
-  opacity: 0.7;
-  background-color: rgb(64, 45, 45);
+@keyframes float-up {
+  to {
+    transform: translateY(-175vh);
+  }
 }
-.ig:hover{
-  opacity: 0.7;
-  background-color: rgb(64, 45, 61);
+@keyframes sway-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
-.fb:hover{
-  opacity: 0.7;
-  background-color: rgb(45, 51, 64);
-}
-.li:hover{
-  opacity: 0.7;
-  background-color: rgb(45, 56, 64);
-}
-.twt:hover{
-  opacity: 0.7;
-  background-color: rgb(42, 62, 62);
+@keyframes sway-right-to-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-.l1{
-  position: relative;
-  top: 5px;
-  right: 107px;
-  color: #E1306C;
-  cursor: pointer;
+/* ------------------------------------------------HOME ANIMATION------------------------------------------- */
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
-.l2{
-  position: relative;
-  top: 5px;
-  right: 58px;
-  color: rgb(255, 65, 65);
-  cursor: pointer;
+
+body{
+    font-family: 'Exo', sans-serif;
 }
-.l3{
-  position: relative;
-  top: 5px;
-  right: 5px;
-  color: #445ef2;
-  cursor: pointer;
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
 }
-.l4{
-  position: relative;
-  top: 5px;
-  left: 40px;
-  color: #0072b1;
-  cursor: pointer;
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
 }
-.l5{
-  position: relative;
-  top: 5px;
-  left: 90px;
-  color: #00acee;
-  cursor: pointer;
+
+
+.area{
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(113, 113, 113, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
 }
