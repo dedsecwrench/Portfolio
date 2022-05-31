@@ -4,6 +4,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Loading from './components/Loading';
 import {useEffect,useState} from 'react'
 
 function App() {
@@ -14,15 +15,13 @@ function App() {
     setTimeout(() => {
       setIsLoading(false);
     }, 2500);
-  }, [isLoading]);
+  }, [isLoading]);  
 
   if(isLoading){
     return(
-      <div class="loader mt-80">
-      <div class="outer"></div>
-      <div class="middle"></div>
-      <div class="inner"></div>
-    </div>
+      <div>
+         <Loading/> 
+      </div>
     )
   }
   else{

@@ -10,6 +10,21 @@
   /* border: 1px solid #00acee; */
 }
 
+/* fade animation when loading component time gets out */
+.home_{
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 .button{
     position: relative;
     left: 550px;
@@ -42,11 +57,6 @@
   .name{
     /* top:1px */
   }
-  /* .stp{
-    height: 160px;
-    width: 90px;
-    border-radius: 10px;
-  } */
   .center-text1{
     color: white;
     position: absolute;
@@ -109,8 +119,8 @@
   
   
   body {
-    min-height: 110vh;
-    background-color: #000000;
+    /* min-height: 110vh; */
+    background-color: #fffefe;
   
     --def: #000000; 	
       --inv: #fff;
@@ -1079,6 +1089,11 @@ body{
 
 /* -----------------------------------------LOADING ANIMATION---------------------------------------- */
 
+.loadingBox{
+  /* height: 100px; */
+  background-color: white;
+}
+
 .loader {
   position: relative;
 }
@@ -1087,8 +1102,8 @@ body{
 .middle,
 .inner {
   border: 3px solid transparent;
-  border-top-color: #3cefff;
-  border-right-color: #3cefff;
+  border-top-color: #3cffef;
+  border-right-color: #3cffef;
   border-radius: 50%;
   position: absolute;
   top: 50%;
