@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Loading from './components/Loading';
 import {useEffect,useState} from 'react'
 
-function App() {
+const App = () => {
 
   const [isLoading,setIsLoading] = useState(true)
 

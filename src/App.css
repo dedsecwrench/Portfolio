@@ -202,7 +202,7 @@
   }
   
   
-  /* ------------------------ About Me --------------------------------- */
+  /* -------------------------------------------- About Me --------------------------------------------- */
   .About{
     font-size: 2rem;
     color: rgb(255, 255, 255);
@@ -1139,3 +1139,39 @@ body{
     transform: rotate(360deg);
   }
 }
+
+/* ------------------------------------------SLIDE RIGHT TEXT---------------------------------------------- */
+
+.slide-right{
+  animation: 1.5s slide-right;
+  transition: ease-in-out;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 5%;
+    width: 50%;
+  }
+}
+
+/* .slide-left{
+  animation: 3s slide-left;
+  transition: ease-in-out;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 120%;
+    width: 350%; 
+  }
+
+  to {
+    margin-left: 55%;
+    width: 100%;
+  }
+} */
