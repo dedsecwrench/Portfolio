@@ -1,7 +1,7 @@
 import React from 'react'
 import clock from './images/clock.png'
 import AddStd from './images/AddStudentApp.png'
-import TodoApp from './images/TodoApp.png'
+import TodoApp from './images/todoapp.png'
 import Blog from './images/BlogApp.png'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -109,7 +109,7 @@ const Projects = () => {
         </Card></a>
 
 
-        <a href="https://todo-app-j-s.netlify.app" target="_blank" style={{textDecoration: "none"}}>
+        <a href="https://to-do-app-redux.netlify.app" target="_blank" style={{textDecoration: "none"}}>
              <Card sx={{ maxWidth: 355}} style={skillBox}>
           <CardActionArea>
             <CardMedia
@@ -119,14 +119,14 @@ const Projects = () => {
               alt="green iguana"
               style={{borderRadius:"4px"}}
             /><br/>
-            <CardContent style={{ borderRadius: "5px 5px 5px 5px", backgroundColor:"#000000", border:"1px solid #706e6e"}}>
+            <CardContent  style={{ borderRadius: "5px 5px 5px 5px", backgroundColor:"#000000", border:"1px solid #706e6e"}}>
               <Typography gutterBottom variant="h4" component="div" style={{color:"#f7f7f7"}}>
                 Todo App
               </Typography>
               <Typography gutterBottom variant="h5" component="div" color="text.secondary" style={{color:"#706e6e"}}>
                 Languages
               </Typography>
-              <Typography variant="body2" color="text.secondary"  display="flex" columnGap="1rem">
+              <Typography flexWrap="wrap" rowGap="15px" variant="body2" color="text.secondary"  display="flex" columnGap="1rem">
                   <Typography variant="body2" color="text.secondary" style={skillTextBox} sx={{maxWidth:100}}>
                        HTML5 
                   </Typography>
@@ -135,7 +135,13 @@ const Projects = () => {
                   </Typography>
                   <Typography variant="body2" color="text.secondary" style={skillTextBox} sx={{maxWidth:110}}>
                         JAVASCRIPT
+                  </Typography>  
+                  <Typography variant="body2" color="text.secondary" style={skillTextBox} sx={{maxWidth:110}}>
+                        REACT
                   </Typography>    
+                  <Typography variant="body2" color="text.secondary" style={skillTextBox} sx={{maxWidth:110}}>
+                        REDUX
+                  </Typography>  
               </Typography>
             </CardContent>
           </CardActionArea>

@@ -7,7 +7,7 @@ import resume from './Resume/NameeraResume.pdf'
 const navigation = [
     { name: 'Home', href: '#', current: true },
     { name: 'About', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
+    { name: 'Portfolio', href: '#', current: false },
     { name: 'Contact', href: '#', current: false },
   ]
   
@@ -41,7 +41,6 @@ const NavbarComp = () => {
                 <Menu as="div" className="ml-3 relative">
                     <div>
                       <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                        {/* <span className="sr-only">Open user menu</span> */}
                         <img
                           className="h-8 w-8 rounded-full"
                           src={profile}
@@ -59,12 +58,11 @@ const NavbarComp = () => {
                       leaveFrom="transform opacity-100 scale-100"
                       leaveTo="transform opacity-0 scale-95"  >
                         
-                      <Menu.Items className="origin-top-left absolute left-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <Menu.Items className="origin-top-left absolute left-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <Menu.Item>
                           {({ active }) => (
                             <a href={resume} target="_blank" download>
-                            <button
-                              className={classNames(active ? 'bg-gray-200' : '', 'line-l block px-4 py-2 text-md text-gray-700')}>
+                            <button className={classNames(active ? 'bg-gray-200' : '', 'line-l block px-4 py-2 text-md text-gray-700')}>
                              Resume
                             </button>
                             </a>
@@ -96,10 +94,8 @@ const NavbarComp = () => {
                   </div>
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-  
-                  {/* Profile dropdown */}
-                  <div className="inset-y-0 left-0 flex items-center sm:hidden">
-                  {/* Mobile menu button*/}
+
+                <div className="inset-y-0 left-0 flex items-center sm:hidden">
                   <Disclosure.Button className="inline-flex items-center justify-center p-3 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     {open ? (
                       <XIcon className="block h-6 w-6" aria-hidden="true" />
