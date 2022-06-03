@@ -8,7 +8,7 @@ const Home = () => {
     <div className='w-1/3 bord1 text-sky-900 z-10 '>
          <span className='font-bold relative top-56 left-3 text-7xl z-10 slide-right'> Hey There </span> <br/>
          <span className='font-bold relative top-56 left-3 text-7xl z-10 slide-right'> I'm Nameera </span><br/><br/>
-         <span className='font-bold relative top-56 left-3 text-xl z-10 slide-right'> Coding Enthusiast &#38;</span> <br/>
+         <span className='font-bold relative top-56 left-3 text-xl z-10 slide-right'> Coding Enthusiast &#38; </span> <br/>
          <span className='font-bold relative top-56 left-3 text-xl z-10 slide-right'> Frontend Developer </span>
     </div>
        <div className='relative w-100 bord1 z-10'>
