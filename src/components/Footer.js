@@ -7,7 +7,9 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Footer = () => {
     return (
-        <div style={{ borderTop: "1px solid #706e6e" }} className='con'>
+        <>
+        <div style={{ borderTop: "1px solid #706e6e" }} className='con z-10'>
+
 
             <div className='contact mt-8'>
                 CONTACT
@@ -66,8 +68,9 @@ const Footer = () => {
             <div className='lastBlock'>
                 &#169; Copyright 2022 Nameera Pathan
             </div>
-
+       
         </div>
+        </>
     )
 }
 
