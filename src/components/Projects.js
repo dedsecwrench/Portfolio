@@ -32,7 +32,7 @@ const Projects = () => {
         <a href="https://digital-clock-j-s.netlify.app" target="_blank" style={{textDecoration: "none"}}>
         <span className='span1'></span>
         <div className="content">
-          <h1>Digital Clock</h1>
+          <h2>Digital Clock</h2>
           <CardMedia
            className='pb-2'
               component="img"
@@ -79,7 +79,7 @@ const Projects = () => {
       <a href="https://to-do-app-redux.netlify.app" target="_blank" style={{textDecoration: "none"}}>
         <span className='span1'></span>
         <div className="content ">
-          <h1>Todo App</h1>
+          <h2>Todo App</h2>
           <CardMedia
              className='pb-2'
               component="img"
@@ -134,7 +134,7 @@ const Projects = () => {
       <a href="https://react-j-s-blog.netlify.app" target="_blank" style={{textDecoration: "none"}}>
         <span className='span1'></span>
         <div className="content">
-          <h1>Blog App</h1>
+          <h2>Blog App</h2>
           <CardMedia
               className='pb-2'
               component="img"
